@@ -1,9 +1,11 @@
 import React from 'react'
+import orange from '../assets/svgs/orange-fill.svg'
 
 const Experience = () => {
   return (
-    <div className='text-black  py-10 md:rounded-[100px] '>
-        <div className='flex flex-col items-center  pb-24  text-secondary '>
+    <div className='text-black  py-10 md:rounded-[100px] relative overflow-hidden'>
+      <img src={orange} alt="" className='absolute top-32 max-md:hidden animate-spin-reverse' />
+        <div className='flex flex-col items-center  pb-24  text-secondary relative '>
             <h1 className='text-4xl font-bold px-10 pb-10 text-center'>What <span className='text-primaryOrange'>Experience</span> i have?</h1>
             <div className='flex flex-col items-center gap-10 pt-10'>
           <div className='flex max-md:flex-col  justify-center items-center gap-10  max-md:px-10'>

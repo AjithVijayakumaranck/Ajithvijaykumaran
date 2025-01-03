@@ -2,28 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import auto from '../assets/svgs/autograph.svg'
 
-const Navbar = () => {
+const Navbar = ({isScrolled}) => {
 
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 700) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up when the component is unmounted or menu is toggled
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      document.body.style.overflow = "auto"; // Reset overflow when unmounting
-    };
-  }, []);
 
  const socials = [
     { name: '/ Linkedin', link: '/' },

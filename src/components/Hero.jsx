@@ -4,7 +4,7 @@ import wave from  '../assets/svgs/strok-gray.svg'
 
 const Hero = () => {
   return (
-    <div className={`${
+    <div id="hero" className={`${
         window.innerHeight > 1000
           ? `h-[800px] max-h-[800px]`
           : `h-screen ` 
