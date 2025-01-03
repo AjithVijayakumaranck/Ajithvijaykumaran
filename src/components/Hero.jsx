@@ -9,13 +9,13 @@ const Hero = () => {
           ? `h-[800px] max-h-[800px]`
           : `h-screen ` 
       } w-full flex shadow-lg bg-primary flex-col gap-7 justify-center items-center relative  overflow-hidden rounded-b-[100px]`}>
-        <img src={wave} alt=""  className='absolute w-[1000px] -right-[550px] top-52 max-md:hidden'/>
-        <img src={wave} alt=""  className='absolute w-[1000px] -bottom-[300px] md:-left-[500px] md:-top-[500px] '/>
+        <img src={wave} alt=""  className='absolute w-[1000px]  animate-spin-slow -right-[550px] top-52 max-md:hidden'/>
+        <img src={wave} alt=""  className='absolute w-[1000px] animate-spin-slow -bottom-[300px] md:-left-[500px] md:-top-[500px] '/>
         <div className='relative flex flex-col  border-white border-[5px] justify-center items-center aspect-square  h:30  md:h-60 rounded-full  text-white'>
             <div className='h-60 rounded-full overflow-hidden aspect-square'>
             <img src={hero} alt="" />
             </div>
-            <p className='absolute bg-white px-8 py-1 rounded-full text-black -right-20 top-[160px] -rotate-6 font-semibold'>Ajith Vijaykumaran</p>
+            <p className='absolute bg-white px-8 py-1 rounded-full text-black -right-20 top-[160px] -rotate-6 font-semibold '>Ajith Vijaykumaran</p>
           
         </div>
         <h1 className='font-secondary relative text-[30px] md:text-[60px] text-secondary leading-none '>Fullstack Developer</h1>

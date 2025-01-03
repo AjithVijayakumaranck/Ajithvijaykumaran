@@ -19,6 +19,11 @@ export default {
       backgroundImage: {
         wave: "url('/assets/svgs/orange-fill.svg ')",
       },
+      animation: {
+        "spin-slow": "spin 40s linear infinite",
+        "spin-reverse": "spin-reverse 40s linear infinite",
+      },
+
     },
   },
   plugins: [],

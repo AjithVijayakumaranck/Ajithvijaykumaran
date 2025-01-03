@@ -5,6 +5,15 @@
 @tailwind utilities;
 
 
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 * {
   font-family: roboto;
 }
