@@ -126,7 +126,7 @@ const Hero = () => {
         id="staggerItem"
         className="absolute w-[1000px] -bottom-[300px] md:-left-[500px] md:-top-[500px] animate-spin-slow"
       />
-      <div className="heroContainer md:hiddens relative bg-white flex flex-col border-white border-[5px] justify-center items-center aspect-square md:h-60 rounded-full text-white">
+      <div className="heroContainer md:hidden relative bg-white flex flex-col border-white border-[5px] justify-center items-center aspect-square md:h-60 rounded-full text-white">
         <div className="h-60 rounded-full overflow-hidden aspect-square"  >
           
           <img src={hero} alt=""  className='hero'/>
