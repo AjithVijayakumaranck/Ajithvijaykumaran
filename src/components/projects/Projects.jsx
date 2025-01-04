@@ -1,11 +1,6 @@
 import React from 'react'
-import hero from '../../assets/hero.jpg'
-import Tile from './tile'
 import ReverseTile from './ReverseTile'
-
-
-
-
+import Tiles from './Tiles'
 
 
 
@@ -56,7 +51,7 @@ const Projects = () => {
                     }else{
 
                         return (
-                            <Tile Heading={items.Heading} Subheading={items.Subheading} discription={items.discription} tech={items.tech} index={index++} link={items.link}/>
+                            <Tiles Heading={items.Heading} Subheading={items.Subheading} discription={items.discription} tech={items.tech} index={index++} link={items.link}/>
                         )
                     }
                 })
