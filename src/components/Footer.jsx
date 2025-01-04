@@ -1,20 +1,38 @@
 import React from 'react'
 import wave from  '../assets/svgs/orange-fill.svg'
 import auto from  '../assets/svgs/autograph.svg'
+import gray from '../assets/svgs/wave-fill.svg'
 import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 
+
+
+
+const socials = [
+  { name: '/ Linkedin', link: 'https://www.linkedin.com/in/ajithvijayakumaran/' },
+  { name: '/ Instagram', link: 'https://www.instagram.com/ajithvijayakumaran_/' },
+  { name: '/ Github', link: 'https://github.com/AjithVijayakumaranck' },
+]
 
 const Footer = ({isScrolled}) => {
+
+
   return (
-    <footer className='md:h-96 bg-primary  mt-14 md:mt-32 max-md:pt-14  overflow-hidden bg-wave relative flex max-md:flex-col '>
-            <img src={wave} alt="wave" className='max-md:hidden absolute'/>
+    <footer className='md:h-64 bg-primary  mt-14 md:mt-48 max-md:pt-14  overflow-hidden bg-wave relative flex max-md:flex-col '>
+            <img src={gray} alt="wave" className='max-md:hidden absolute'/>
             <div className='relative flex md:gap-4 gap-2 justify-center flex-col items-center md:items-start md:px-32  h-full md:w-1/2 w-full'>
             <img src={auto} alt="autograph" className='w-56 md:w-80 '/>
             <p>Give me a shoutout on my <span className='text-primaryOrange text-2xl font-semibold'>socials</span></p>
             <div className='flex gap-4 text-sm'>
-            <p className='test-start'>//Instagram</p>
-             <p className=' test-start'>//Linkedin</p>
-             <p className=' test-start'>//Github</p>
+            {
+                socials.map((item,index) => {
+                    return(
+               
+                     <Link className='hover:text-primaryOrange' to={item.link} key={index} target={"_blank"}>{item.name}</Link>
+                
+                )
+                } )
+            }
           </div>
             </div>
 
@@ -22,7 +40,7 @@ const Footer = ({isScrolled}) => {
        {
  <HashLink smooth  to="#hero">
  <div
-   className={`fixed md:bottom-32 bottom-14  md:-right-10 right-4 flex md:-rotate-90 gap-4 group/footer cursor-pointer bg-white p-3 md:py-2 md:px-5 rounded-full hover:shadow-xl transition-all ${
+   className={`fixed md:bottom-28 bottom-14  md:-right-10 right-4 flex md:-rotate-90 gap-4 group/footer cursor-pointer bg-white p-3 md:py-2 md:px-5 rounded-full hover:shadow-xl transition-all ${
      isScrolled ? "opacity-100" : "opacity-0"
    }`}
    aria-label="Scroll to top"
